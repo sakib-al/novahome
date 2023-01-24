@@ -1,0 +1,89 @@
+
+/* Extra Small Device */
+@media (max-width: 767px) {
+    .mobile_header{}
+    .mobile_logo{}
+    .mobile_logo img{    width: 75px;
+        height: 45px;
+        object-fit: cover;
+        padding: 5px 0;}
+
+    .top_bar{    padding: 0px 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;}
+
+    .slideshow_container{    height: 236px;
+        max-width: 80vh;
+        overflow: hidden;}
+    .slider_section{margin-top: 21px;}
+    .section_content{height: auto;}
+
+    .content_sec3_content {
+        width: 100%;
+        margin: 0 !important;
+        float: unset;
+        padding: 20px;
+    }
+    .carousel-control-prev, .carousel-control-next{display: none;}
+    .card-body.overlap_content{position: unset !important;}
+    .content_section_4 .card{height: unset !important;}
+    .content_section_2, .content_section_4{padding-bottom: 0}
+
+    .ue_wrap:before{    display: none;
+    }
+    .ue_right_text{    margin-top: 0;
+        padding: 0;}
+    .upcoming_events_items{padding: 0 0;}
+    .ue_wrap{padding-bottom: 0;}
+    .slider_content {display: none;}
+    .content_section_1{padding-top: 0 !important;}
+    .slider_dot_container{    bottom: 30px;}
+    .all_member .c_col{    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;}
+
+    .g-member {
+        max-width: 50% !important;
+    }
+}
+
+
+/* Small Device */
+@media (min-width: 768px) {
+    .slideshow_container{height: auto;}
+    .card-body.overlap_content{position: unset !important;}
+    .content_section_2, .content_section_4{padding-bottom: 0px;}
+    .board-img{height: auto;}
+    .executive-img { height: 200px;}
+    .all_member .c_col{    -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%;}
+}
+
+/* Medium  Device */
+@media (min-width: 992px) {
+    .slideshow_container{height: 800px;}
+    .card-body.overlap_content{position: absolute !important;}
+    .content_section_2, .content_section_4{padding-bottom: 220px;}
+    .board-img{height: 374px;}
+
+    a.animated_btn.nav{min-width: 85px;}
+    .all_member .c_col{    -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;}
+
+}
+
+/* Large Device */
+@media (min-width: 1200px) {
+
+    a.animated_btn.nav{min-width: 110px;}
+
+}
+
+/* Extra Large Device */
+@media (min-width: 1400px) {
+
+
+}
