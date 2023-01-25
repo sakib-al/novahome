@@ -1850,3 +1850,27 @@ max-width: 20%;}
     border-right-style: solid;
     bottom: 0;
 }
+.img-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.img-item{
+    padding: 5px;
+}
+.img-item img{
+    height: 170px;
+    width: 170px;
+}
+.gallery-detail h3{
+    color: #262626;
+    position: relative;
+}
+.gallery-detail h3::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    height: 2px;
+    background-color: #019BC0;
+    width: 40%;
+}

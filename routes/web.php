@@ -41,6 +41,7 @@ Route::get('news/page/{blog}', [PageController::class, 'singleNews'])->name('new
 Route::get('vote/all', [PageController::class, 'allVotes'])->name('vote.all');
 Route::get('galleries', [PageController::class, 'galleries'])->name('gallery.all');
 Route::get('gallery/{gallery}', [PageController::class, 'gallery'])->name('gallery.single');
+Route::get('gallery-details',[PageController::class,'galleryDetails'])->name('gallery.details');
 
 Route::get('member/list', [PageController::class, 'memberList'])->name('member.list');
 

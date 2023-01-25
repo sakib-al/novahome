@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{asset('front/assets/css/custom-style.css')}}?c=2">
     <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}?c=5">
 
+    @stack('custom_css')
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/9c65216417.js" crossorigin="anonymous"></script>
     @yield('head')
@@ -324,6 +325,8 @@
     <script src="{{asset('front/js/plugin/scrollup.js')}}"></script>
     <script src="{{asset('front/js/plugins.js')}}"></script>
     <script type="text/javascript" src="{{asset('front/js/jquery.easeScroll.js')}}"></script>
+
+    @stack('custom_js')
 
     <script>
         $("html").easeScroll({

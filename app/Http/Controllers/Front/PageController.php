@@ -40,9 +40,11 @@ class PageController extends Controller
         return view('front.homepage',compact('sliders','home_sections','fund_raisers','news','events',
             'executive_members','general_members','votes','gallery_categories'));
     }
+
     public function contactUs(){
         return view('front.contactUs');
     }
+
     /*
      * method for single home section page
      * */
@@ -143,5 +145,11 @@ class PageController extends Controller
         // dd($members);
         $types = MemberType::with('users')->where('status', 1)->get();
         return view('front.member.memberList',compact('types'));
+    }
+
+
+    public function galleryDetails()
+    {
+        return view('front.gallery.gallery_details');
     }
 }

@@ -156,7 +156,8 @@ class MediaRepo {
 
     // Size Paths
     public static function sizes($image_path, $file_name){
-        $output['original'] = env('AWS_URL')."/uploads/$image_path/$file_name";
+        // $output['original'] = env('AWS_URL')."/uploads/$image_path/$file_name";
+        $output['original'] = Storage::disk(env('FILE_DISK'))->url("/uploads/$image_path/$file_name");
 
         // dd(public_path("uploads/$image_path/small_$file_name"));
         if(Storage::disk(env('FILE_DISK'))->exists("/uploads/$image_path/small_$file_name")){

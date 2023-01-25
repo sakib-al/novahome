@@ -77,8 +77,8 @@
                                     <div class="col-md-6">
                                         <div>
                                             <div class="{{$sec->is_image_inner_border?'img_inner_border':''}} card-img-wrap">
-                                                {{-- <img class="img-fluid " src="{{ $sec->img_paths['original'] }}" alt=""> --}}
-                                                <img class="img-fluid " src="https://novahome.stylezworld.net/uploads/2023/01/1673112244.png" alt="">
+                                                <img class="img-fluid " src="{{ $sec->img_paths['original'] }}" alt="">
+                                                {{-- <img class="img-fluid " src="https://novahome.stylezworld.net/uploads/2023/01/1673112244.png" alt=""> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
                                         <div class="left-border"></div>
                                         <div class="content_sec1_content ml-4">
                                             <h3 class="sec_title text-uppercase">{{ $sec->title }}</h3>
-                                            
+
                                             <h3 style="font-weight: 700">{{ $sec->sub_title }}</h3>
 
                                             <div class="section_content">
@@ -123,8 +123,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card-img-wrap">
-                                            {{-- <img class="img-fluid" src="{{ $sec->img_paths['original'] }}" alt=""> --}}
-                                            <img class="img-fluid" src="https://novahome.stylezworld.net/uploads/2023/01/1673112093.png" alt="">
+                                            <img class="img-fluid" src="{{ $sec->img_paths['original'] }}" alt="">
+                                            {{-- <img class="img-fluid" src="https://novahome.stylezworld.net/uploads/2023/01/1673112093.png" alt=""> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -155,9 +155,10 @@
                                     <div class="corner-borders corner-borders--left"></div>
                                      <div class="corner-borders corner-borders--right"></div>
                                     @foreach (\App\Models\GalleryItem::all() as $galleryImage)
+                                        
                                         @php
-                                            if(file_exists(public_path("uploads/gallery/medium/$galleryImage->image"))){
-                                                $img =  asset("uploads/gallery/small/$galleryImage->image");
+                                            if(file_exists(public_path("storage/uploads/gallery/medium/$galleryImage->image"))){
+                                                $img =  asset("storage/uploads/gallery/small/$galleryImage->image");
                                             }else{
                                                 $img =  asset('/img/no-image.png');
                                             }
